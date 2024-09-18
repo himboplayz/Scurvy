@@ -7,5 +7,14 @@
         "stream": true
       }
     ]
+  },
+  "wegotscurvywarningsound": {
+    "subtitle": "subtitles.wegotscurvywarningsound",
+    "sounds": [
+      {
+        "name": "scurvy:pink_-_we_ve_got_scurvy__official_music_video__2009_-_lyrics",
+        "stream": false
+      }
+    ]
   }
 }

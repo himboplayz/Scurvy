@@ -36,6 +36,13 @@ public class GetPlayerGamemodeProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
+			{
+				double _setval = 0;
+				entity.getCapability(ScurvyModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.symptomTimer = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 		}
 	}
 }

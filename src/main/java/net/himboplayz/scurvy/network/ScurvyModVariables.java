@@ -67,6 +67,7 @@ public class ScurvyModVariables {
 			PlayerVariables original = ((PlayerVariables) event.getOriginal().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			clone.scurvyTimer = original.scurvyTimer;
+			clone.symptomTimer = original.symptomTimer;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -104,6 +105,7 @@ public class ScurvyModVariables {
 
 	public static class PlayerVariables {
 		public double scurvyTimer = 0;
+		public double symptomTimer = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -113,12 +115,14 @@ public class ScurvyModVariables {
 		public Tag writeNBT() {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putDouble("scurvyTimer", scurvyTimer);
+			nbt.putDouble("symptomTimer", symptomTimer);
 			return nbt;
 		}
 
 		public void readNBT(Tag tag) {
 			CompoundTag nbt = (CompoundTag) tag;
 			scurvyTimer = nbt.getDouble("scurvyTimer");
+			symptomTimer = nbt.getDouble("symptomTimer");
 		}
 	}
 
@@ -144,6 +148,7 @@ public class ScurvyModVariables {
 				if (!context.getDirection().getReceptionSide().isServer()) {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 					variables.scurvyTimer = message.data.scurvyTimer;
+					variables.symptomTimer = message.data.symptomTimer;
 				}
 			});
 			context.setPacketHandled(true);

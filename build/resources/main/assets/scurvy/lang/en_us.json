@@ -1,9 +1,12 @@
 {
   "effect.scurvy.scurvy_effect": "Scurvy",
   "death.attack.scurvy.item": "%1$s was killed by %2$s using %3$s",
+  "item.scurvy.scurvy_icon": "Scurvy",
   "death.attack.scurvy.player": "%1$s died whilst trying to escape %2$s",
   "item.scurvy.we_got_scurvy": "Music Disc",
+  "item.scurvy.enriched_kelp": "Enriched Kelp",
   "item.scurvy.we_got_scurvy.desc": "P!NK - We\u0027ve Got Scurvy ",
   "subtitles.wegotscurvymusic": "We Got Scurvy - P!NK",
+  "item_group.scurvy.scurvy_tab": "Scurvy",
   "death.attack.scurvy": "%1$s passed away from scurvy."
 }

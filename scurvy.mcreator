@@ -112,11 +112,119 @@
           }
         ]
       }
+    },
+    {
+      "name": "WhenPlayerEatsApple",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "when_player_eats_enriched_kelp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/himboplayz/scurvy/procedures/WhenPlayerEatsAppleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EnrichedKelp",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enriched_kelp",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/scurvy/models/item/enriched_kelp.json",
+          "src/main/java/net/himboplayz/scurvy/item/EnrichedKelpItem.java"
+        ]
+      }
+    },
+    {
+      "name": "EnrichedKelpRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enriched_kelp_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/scurvy/recipes/enriched_kelp_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "ScurvyTab",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scurvy_tab",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "ScurvyIcon",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scurvy_icon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/himboplayz/scurvy/item/ScurvyIconItem.java",
+          "src/main/resources/assets/scurvy/models/item/scurvy_icon.json"
+        ]
+      }
+    },
+    {
+      "name": "ScurvyWarningProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scurvy_warning_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/himboplayz/scurvy/procedures/ScurvyWarningProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ScurvySymptomCountdown",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scurvy_symptom_countdown",
+      "metadata": {
+        "files": [
+          "src/main/java/net/himboplayz/scurvy/procedures/ScurvySymptomCountdownProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
     {
       "name": "scurvyTimer",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "symptomTimer",
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
@@ -130,6 +238,14 @@
       ],
       "category": "music",
       "subtitle": "We Got Scurvy - P!NK"
+    },
+    {
+      "name": "wegotscurvywarningsound",
+      "files": [
+        "pink_-_we_ve_got_scurvy__official_music_video__2009_-_lyrics"
+      ],
+      "category": "neutral",
+      "subtitle": "Scurvy symptoms arise..."
     }
   ],
   "tag_elements": {
@@ -142,10 +258,14 @@
     "en_us": {
       "effect.scurvy.scurvy_effect": "Scurvy",
       "death.attack.scurvy.item": "%1$s was killed by %2$s using %3$s",
+      "item.scurvy.scurvy_icon": "Scurvy",
       "death.attack.scurvy.player": "%1$s died whilst trying to escape %2$s",
       "item.scurvy.we_got_scurvy": "Music Disc",
+      "item.scurvy.enriched_kelp": "Enriched Kelp",
       "item.scurvy.we_got_scurvy.desc": "P!NK - We\u0027ve Got Scurvy ",
       "subtitles.wegotscurvymusic": "We Got Scurvy - P!NK",
+      "subtitles.wegotscurvywarningsound": "Scurvy symptoms arise...",
+      "item_group.scurvy.scurvy_tab": "Scurvy",
       "death.attack.scurvy": "%1$s passed away from scurvy."
     }
   },
