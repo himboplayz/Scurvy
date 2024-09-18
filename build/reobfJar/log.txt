@@ -212,5 +212,6 @@ Writing Output: F:\HomoHimbo\Minecraft Mod Development\Scurvy\build\reobfJar\out
   net/himboplayz/scurvy/procedures/ScurvyCountdownProcedureProcedure.class
   net/himboplayz/scurvy/procedures/ScurvyDeathProcedureProcedure.class
   net/himboplayz/scurvy/procedures/ScurvyEffectOnEffectActiveTickProcedure.class
+  net/himboplayz/scurvy/procedures/ScurvySymptomCountdownProcedure.class
   net/himboplayz/scurvy/procedures/WhenPlayerEatsAppleProcedure.class
   pack.mcmeta

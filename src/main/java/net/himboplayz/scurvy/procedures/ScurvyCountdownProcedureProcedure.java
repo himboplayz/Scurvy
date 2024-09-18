@@ -30,9 +30,9 @@ public class ScurvyCountdownProcedureProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity.getCapability(ScurvyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ScurvyModVariables.PlayerVariables())).scurvyTimer > 200) {
+		if ((entity.getCapability(ScurvyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ScurvyModVariables.PlayerVariables())).scurvyTimer > 336000) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(ScurvyModMobEffects.SCURVY_EFFECT.get(), 1, 0));
+				_entity.addEffect(new MobEffectInstance(ScurvyModMobEffects.SCURVY_EFFECT.get(), 5, 0));
 		} else {
 			{
 				double _setval = (entity.getCapability(ScurvyModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ScurvyModVariables.PlayerVariables())).scurvyTimer + 1;
