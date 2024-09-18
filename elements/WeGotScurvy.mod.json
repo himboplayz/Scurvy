@@ -1,0 +1,26 @@
+{
+  "_fv": 66,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "rarity": "RARE",
+    "texture": "scurvy_disc",
+    "description": "P!NK - We've Got Scurvy ",
+    "creativeTabs": [
+      {
+        "value": "TOOLS"
+      }
+    ],
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:wegotscurvymusic"
+    },
+    "lengthInTicks": 1180,
+    "analogOutput": 0
+  }
+}

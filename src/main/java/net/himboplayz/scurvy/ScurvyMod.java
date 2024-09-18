@@ -17,7 +17,10 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.himboplayz.scurvy.init.ScurvyModTabs;
+import net.himboplayz.scurvy.init.ScurvyModSounds;
 import net.himboplayz.scurvy.init.ScurvyModMobEffects;
+import net.himboplayz.scurvy.init.ScurvyModItems;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -38,6 +41,11 @@ public class ScurvyMod {
 		// End of user code block mod constructor
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+		ScurvyModSounds.REGISTRY.register(bus);
+
+		ScurvyModItems.REGISTRY.register(bus);
+
+		ScurvyModTabs.REGISTRY.register(bus);
 
 		ScurvyModMobEffects.REGISTRY.register(bus);
 

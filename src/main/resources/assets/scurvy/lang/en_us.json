@@ -1,6 +1,9 @@
 {
-  "effect.scurvy.scurvy_effect": "Scurvy Effect",
+  "effect.scurvy.scurvy_effect": "Scurvy",
   "death.attack.scurvy.item": "%1$s was killed by %2$s using %3$s",
   "death.attack.scurvy.player": "%1$s died whilst trying to escape %2$s",
+  "item.scurvy.we_got_scurvy": "Music Disc",
+  "item.scurvy.we_got_scurvy.desc": "P!NK - We\u0027ve Got Scurvy ",
+  "subtitles.wegotscurvymusic": "We Got Scurvy - P!NK",
   "death.attack.scurvy": "%1$s passed away from scurvy."
 }

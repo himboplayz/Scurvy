@@ -81,6 +81,37 @@
           }
         ]
       }
+    },
+    {
+      "name": "WeGotScurvy",
+      "type": "musicdisc",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "we_got_scurvy",
+      "metadata": {
+        "files": [
+          "src/main/java/net/himboplayz/scurvy/item/WeGotScurvyItem.java",
+          "src/main/resources/assets/scurvy/models/item/we_got_scurvy.json"
+        ]
+      }
+    },
+    {
+      "name": "GetPlayerGamemode",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_player_gamemode",
+      "metadata": {
+        "files": [
+          "src/main/java/net/himboplayz/scurvy/procedures/GetPlayerGamemodeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -91,14 +122,30 @@
       "value": "0"
     }
   ],
-  "sound_elements": [],
-  "tag_elements": {},
+  "sound_elements": [
+    {
+      "name": "wegotscurvymusic",
+      "files": [
+        "pink_-_we_ve_got_scurvy__official_music_video__2009_-_lyrics"
+      ],
+      "category": "music",
+      "subtitle": "We Got Scurvy - P!NK"
+    }
+  ],
+  "tag_elements": {
+    "ITEMS:minecraft:music_discs": [
+      "~CUSTOM:WeGotScurvy"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
       "effect.scurvy.scurvy_effect": "Scurvy",
       "death.attack.scurvy.item": "%1$s was killed by %2$s using %3$s",
       "death.attack.scurvy.player": "%1$s died whilst trying to escape %2$s",
+      "item.scurvy.we_got_scurvy": "Music Disc",
+      "item.scurvy.we_got_scurvy.desc": "P!NK - We\u0027ve Got Scurvy ",
+      "subtitles.wegotscurvymusic": "We Got Scurvy - P!NK",
       "death.attack.scurvy": "%1$s passed away from scurvy."
     }
   },
